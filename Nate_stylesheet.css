@@ -9,6 +9,7 @@ p {
 
 img {
 	border: 2px solid;
+		min-width: 350px;
 }
 
 h2 {
@@ -43,6 +44,11 @@ h3 {
 	margin-left: 10%;
 }
 
+.navbar img {
+	border: 0px solid;
+	min-width: 50px;
+	max-width: 50px;
+}
 
 .first p{
 	width: 45%;
@@ -51,6 +57,7 @@ h3 {
 .second img{
 	margin-left: 15%;
 	margin-right: 15%;
+	min-width: 450px;
 }
 
 .second p{
@@ -66,13 +73,16 @@ h3 {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	margin-bottom: -25px;
+	border-radius: 25px 25px 0px 0px;
 }
 
 .second h3{
 	margin-left: 62%;
 	width: 33%;
+	border-radius: 0px 0px 35px 35px;
 }
 
 main {
 	margin-left: 5%;
 	margin-right: 5%;
+	margin-bottom: 5%;
