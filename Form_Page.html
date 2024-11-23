@@ -6,10 +6,10 @@
 	<meta charset="utf-8" />
 	<meta name="keywords" content="Nate, Caputo, About, Personal" />
 	<link rel="stylesheet" href="Nate_stylesheet.css">
+	<link rel="stylesheet" href="Nate_Formsheet.css">
 	<!--Page Name-->
 	<title> Contact Page </title>
 </head>
-
 
 <body>
 	<!--Hot Bar Used to Navigate the Pages-->
@@ -22,49 +22,61 @@
 			<li><a href="Form_Page.html">Contact</a></li>
 		</ul>
 	</nav>
+</body>
 
-	<br /> <br />
+<br /> <br />
 	
-	<main class="third">
+<main class="third">
+	
+	<h1 align="middle"> Contact Me </h1>
+	
+	<h3>
+		<form method="post">
 		
-		<h1 align="middle"> Contact Me </h1>
-		
-		<h3>
-		
-		<form>
 			<label for="fname"> First Name: </label>
-			<input type="text" id="fname" name="fname" placeholder="John"> <br /> <br />
-		
-		<form>
+			<input type="text" id="fname" name="fname" placeholder="John" required> <br /> <br />
+
 			<label for="lname"> Last Name: </label>
 			<input type="text" id="lname" name="lname" placeholder="Doe"> <br /> <br />
-			
-		<form>
+
 			<label for="street"> Street Name: </label>
 			<input type="text" id="street" name="street" placeholder="Wood Dr."> <br /> <br />
-			
-		<form>
+
 			<label for="city"> City: </label>
 			<input type="text" id="city" name="city" placeholder="Vancouver"> <br /> <br />
-			
-		<form>
+
 			<label for="province"> Province: </label>
 			<input type="text" id="province" name="province" placeholder="British Columbia"> <br /> <br />
-			
-		<form>
-			<label for="poscode"> Poscode: </label>
-			<input type="text" id="poscode" name="poscode" placeholder="ANA NAN"> <br /> <br />
-			
-		<form>
-			<label for="phone"> Phone: </label>
-			<input type="text" id="phone" name="phone" placeholder="123-456-7890"> <br /> <br />
-			
-		
-		
-		</h3>
-		
-	</main>
 
-</body>
+			<label for="postcode"> Postcode: </label>
+			<input type="text" id="postcode" name="postcode" placeholder="ANA NAN"  title="Three number or digits followed by another three"> <br /> <br />
+
+			<label for="phone"> Phone #: </label>
+			<input type="text" id="phone" name="phone" placeholder="123-456-7890" pattern="\d{3}-\d{3}-\d{4}" title="phone number composed of 10 digits" required> <br /> <br />
+
+			<label for="school">School Status:</label>
+			<select name="school" id="school">
+				<option value="Teacher">Teacher</option>
+				<option value="Student">Student</option>
+				<option value="Upcoming">Potential Student</option>
+				<option value="Parent">Parent</option>
+			</select> <br /> <br />
+
+			<label for="info"> Additional Information: </label>
+			<textarea id="info" name="info" placeholder="Briefly describe your message"></textarea> <br /> <br />
+		
+		Delete Details:
+		<input type="reset" value="Reset"
+			   style="background-color: orange" />
+			   
+		Submit Details:
+		<input type="Submit" value="submit"
+			   style="background-color: tan" />
+		</form>
+	
+	</h3>
+	
+</main>
+
 
 </html>
