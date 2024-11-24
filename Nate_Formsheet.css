@@ -1,12 +1,25 @@
 form {
-	width: 300px;
+	width: 100%;
+}
+
+label {
+	margin-left: 30%;
 }
 
 input {
-	width: 100%;
+	width:25%;
 }
 
 textarea {
 	resize: vertical;
 	max-height: 100px;
+	width: 25%;
+}
+
+input:focus, input:textarea {
+	box-shadow: 0 0 4px;
+}
+
+input:focus, input:reset {
+	height:100px;
 }

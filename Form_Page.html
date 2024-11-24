@@ -34,22 +34,22 @@
 		<form method="post">
 		
 			<label for="fname"> First Name: </label>
-			<input type="text" id="fname" name="fname" placeholder="John" required> <br /> <br />
+			<input type="text" id="fname" name="fname" pattern="[A-Za-z]" title="Use only letters" placeholder="John" required> <br /> <br />
 
 			<label for="lname"> Last Name: </label>
-			<input type="text" id="lname" name="lname" placeholder="Doe"> <br /> <br />
+			<input type="text" id="lname" name="lname" pattern="[A-Za-z]" title="Use only letters" placeholder="Doe"> <br /> <br />
 
 			<label for="street"> Street Name: </label>
-			<input type="text" id="street" name="street" placeholder="Wood Dr."> <br /> <br />
+			<input type="text" id="street" name="street" pattern="[A-Za-z0-9]" title="Use numbers or letters only" placeholder="Wood Dr."> <br /> <br />
 
-			<label for="city"> City: </label>
-			<input type="text" id="city" name="city" placeholder="Vancouver"> <br /> <br />
+			<label for="city"> City Name: </label>
+			<input type="text" id="city" name="city" pattern="[A-Za-z]" title="Use only letters" placeholder="Vancouver"> <br /> <br />
 
 			<label for="province"> Province: </label>
-			<input type="text" id="province" name="province" placeholder="British Columbia"> <br /> <br />
+			<input type="text" id="province" name="province" pattern="[A-Za-z]" title="Use only letters" placeholder="British Columbia"> <br /> <br />
 
 			<label for="postcode"> Postcode: </label>
-			<input type="text" id="postcode" name="postcode" placeholder="ANA NAN"  title="Three number or digits followed by another three"> <br /> <br />
+			<input type="text" id="postcode" name="postcode" placeholder="ANA NAN" pattern="[A-Za-z0-9]{3} [A-Za-z0-9]{3}" title="Three number or digits followed by another three"> <br /> <br />
 
 			<label for="phone"> Phone #: </label>
 			<input type="text" id="phone" name="phone" placeholder="123-456-7890" pattern="\d{3}-\d{3}-\d{4}" title="phone number composed of 10 digits" required> <br /> <br />
@@ -62,7 +62,7 @@
 				<option value="Parent">Parent</option>
 			</select> <br /> <br />
 
-			<label for="info"> Additional Information: </label>
+			<label for="info"> Extra Details: </label>
 			<textarea id="info" name="info" placeholder="Briefly describe your message"></textarea> <br /> <br />
 		
 		Delete Details:
