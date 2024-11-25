@@ -4,9 +4,10 @@ form {
 
 label {
 	margin-left: 30%;
+	vertical-align: top;
 }
 
-input {
+text {
 	width:25%;
 }
 
@@ -16,10 +17,22 @@ textarea {
 	width: 25%;
 }
 
-input:focus, input:textarea {
-	box-shadow: 0 0 4px;
+checkbox:hover {
+	cursor: pointer;
 }
 
-input:focus, input:reset {
-	height:100px;
+input[type=reset] {
+	height: 40px;
+	width: 75px;
+	margin-left: 36%;
+	cursor: pointer;
+	border-radius:5px;
+}
+
+input[type=submit] {
+	height: 40px;
+	width: 75px;
+	margin-left: 10%;
+	cursor: pointer;
+	border-radius:5px;
 }
