@@ -27,6 +27,13 @@ h3 {
 	font-size: 24px;
 }
 
+button {
+	font-size: 30px;
+	background-color: tan;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
 .navbar ul{
 	list-style-type: none;
 	background-color: orange;
@@ -57,6 +64,19 @@ h3 {
 
 .first p{
 	width: 45%;
+	margin-bottom: 25%;
+}
+
+.first img {
+	float: right;
+	margin-bottom:20px;
+}
+
+.first button {
+	background-color: pink;
+	color: purple;
+	margin-left: 20%;
+	clear: right;
 }
 
 .second img{
