@@ -1,15 +1,25 @@
 body {
-  background-color: lightgrey;
+  background: linear-gradient(-45deg, #Ffc0cb, #D3D3D3, #40E0D0);
+  background-size: 300% 300%;
+  position: relative;
+  animation: shift 10s ease-in-out infinite;
+}
+
+@keyframes shift {
+	0% {
+		background-position: 0% 25%;
+	}
+	50% {
+			background-position: 100% 75%;
+		}
+	100% {
+		background-position: 0% 25%;
+	}
 }
 
 p {
   font-family: timesnewroman;
   font-size: 20px;
-}
-
-img {
-	border: 2px solid;
-		min-width: 350px;
 }
 
 h1 {
@@ -27,11 +37,60 @@ h3 {
 	font-size: 24px;
 }
 
+img {
+	border: 2px solid;
+		min-width: 350px;
+}
+
+video {
+	display: block;
+	margin: 0 auto;
+}
+
 button {
 	font-size: 30px;
 	background-color: tan;
 	border-radius: 20px;
 	cursor: pointer;
+}
+
+form {
+	width: 100%;
+}
+
+label {
+	margin-left: 30%;
+	vertical-align: top;
+}
+
+text {
+	width:25%;
+}
+
+textarea {
+	resize: vertical;
+	max-height: 100px;
+	width: 25%;
+}
+
+checkbox:hover {
+	cursor: pointer;
+}
+
+input[type=reset] {
+	height: 40px;
+	width: 75px;
+	margin-left: 36%;
+	cursor: pointer;
+	border-radius:5px;
+}
+
+input[type=submit] {
+	height: 40px;
+	width: 75px;
+	margin-left: 10%;
+	cursor: pointer;
+	border-radius:5px;
 }
 
 .navbar ul{
@@ -83,6 +142,7 @@ button {
 	margin-left: 15%;
 	margin-right: 15%;
 	min-width: 450px;
+	margin-bottom: 25px;
 }
 
 .second p{
@@ -93,7 +153,7 @@ button {
 }
 
 .second h2{
-	margin-left: 62%;
+	float:right;
 	width: 33%;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -102,7 +162,7 @@ button {
 }
 
 .second h3{
-	margin-left: 62%;
+	float: right;
 	width: 33%;
 	border-radius: 0px 0px 35px 35px;
 }
@@ -128,10 +188,30 @@ button {
 	padding-right:5%;
 }
 
+.fourth audio{
+	float: right;
+}
 
+.fourth video{
+	width: 75%;
+}
+
+.fourth{
+	background: linear-gradient( #Ff007f, #Ffc0cb);
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-bottom: 2%;
+	padding-top: 2%;
+	border-radius: 20px;
+}
+
+.fourth button{
+	background-color: white;
+}
 
 main {
 	margin-left: 5%;
 	margin-right: 5%;
 	margin-bottom: 5%;
 	min-width: 600px
+}	
