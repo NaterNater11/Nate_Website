@@ -1,45 +1,46 @@
 body {
   background: linear-gradient(-45deg, #Ffc0cb, #D3D3D3, #40E0D0);
-  background-size: 300% 300%;
+  background-size: 500% 500%;
   position: relative;
-  animation: shift 10s ease-in-out infinite;
+  animation: shift 15s ease-in-out infinite;
 }
 
 @keyframes shift {
 	0% {
-		background-position: 0% 25%;
+		background-position: 0% 0%;
 	}
 	50% {
-			background-position: 100% 75%;
+			background-position: 100% 40%;
 		}
 	100% {
-		background-position: 0% 25%;
+		background-position: 0% 0%;
 	}
 }
 
 p {
   font-family: timesnewroman;
-  font-size: 20px;
+  font-size: 3vmin;
 }
 
 h1 {
 	background-color: #febd59;
-	font-size: 36px;
+	font-size: 6vmin;
 }
 
 h2 {
 	background-color: white;
-	font-size: 28px;
+	font-size: 5vmin;
 }
 
 h3 {
 	background-color: beige;
-	font-size: 24px;
+	font-size: 4vmin;
 }
 
 img {
 	border: 2px solid;
 		min-width: 350px;
+		min-width: 450px;
 }
 
 video {
@@ -48,7 +49,7 @@ video {
 }
 
 button {
-	font-size: 30px;
+	font-size: 4vmin;
 	background-color: tan;
 	border-radius: 20px;
 	cursor: pointer;
@@ -61,10 +62,15 @@ form {
 label {
 	margin-left: 30%;
 	vertical-align: top;
+	display: inline-block;
+	margin-bottom: 4%;
 }
 
-text {
-	width:25%;
+input[type=text] {
+	vertical-align: 5px;
+	width: 22vw;
+	box-sizing: border-box;
+	padding: 0 0 10px 0;
 }
 
 textarea {
@@ -101,7 +107,7 @@ input[type=submit] {
 }
 .navbar a{
 	font-family: timesnewroman;
-	font-size: 30px;
+	font-size: 4vmin;
 	color: black;
 	text-decoration: none;
 	display:block;
@@ -157,7 +163,7 @@ input[type=submit] {
 	width: 33%;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	margin-bottom: -25px;
+	margin-bottom: -40px;
 	border-radius: 25px 25px 0px 0px;
 }
 
@@ -170,7 +176,7 @@ input[type=submit] {
 .third h1{
 	padding-top: 25px;
 	padding-bottom: 25px;
-	margin-bottom: -25px;
+	margin-bottom: -40px;
 	border-radius: 35px 35px 0px 0px;
 	margin-left:5%;
 	padding-left:5%;
@@ -213,5 +219,5 @@ main {
 	margin-left: 5%;
 	margin-right: 5%;
 	margin-bottom: 5%;
-	min-width: 600px
+	min-width: 500px
 }	
