@@ -1,3 +1,12 @@
+/*Sets the minimum width of screen resolution, and creates buffers around the page*/
+main {
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 5%;
+	min-width: 500px
+}	
+
+/*Zoomed in background on all pages that shifts between pink and turqiouse*/
 body {
   background: linear-gradient(-45deg, #Ffc0cb, #D3D3D3, #40E0D0);
   background-size: 500% 500%;
@@ -5,6 +14,7 @@ body {
   animation: shift 15s ease-in-out infinite;
 }
 
+/*Creates the background colouring, will pan from left to right and move slightly vertically*/
 @keyframes shift {
 	0% {
 		background-position: 0% 0%;
@@ -17,37 +27,7 @@ body {
 	}
 }
 
-p {
-  font-family: timesnewroman;
-  font-size: 3vmin;
-}
-
-h1 {
-	background-color: #febd59;
-	font-size: 6vmin;
-}
-
-h2 {
-	background-color: white;
-	font-size: 5vmin;
-}
-
-h3 {
-	background-color: beige;
-	font-size: 4vmin;
-}
-
-img {
-	border: 2px solid;
-		min-width: 350px;
-		min-width: 450px;
-}
-
-video {
-	display: block;
-	margin: 0 auto;
-}
-
+/*Buttons signified by tan backgrounds (unless otherwise specified), curved edges, and cursor change to pointer*/
 button {
 	font-size: 4vmin;
 	background-color: tan;
@@ -55,10 +35,43 @@ button {
 	cursor: pointer;
 }
 
-form {
-	width: 100%;
+/*Largest header used to catch people's attention. Orange banner and large font visible for all screens*/
+h1 {
+	background-color: #febd59;
+	font-size: 6vmin;
 }
 
+/*Medium header that is used to describe groupings, defined by a slightly smaller font*/
+h2 {
+	background-color: white;
+	font-size: 5vmin;
+}
+
+/*Smallest header used for listing items, typically used below a larger header, smallest header font (larger then paragraph)*/
+h3 {
+	background-color: beige;
+	font-size: 4vmin;
+}
+
+/*Selecting perfered font, and a good size for all screens*/
+p {
+  font-family: timesnewroman;
+  font-size: 3vmin;
+}
+
+/*Giving an outline to images, helps if they don't load, also set a minimum size requirement*/
+img {
+	border: 2px solid;
+	min-width: 350px;
+}
+
+/*All videos get centered in the middle of the screen*/
+video {
+	display: block;
+	margin: 0 auto;
+}
+
+/*Roughly centers all form components, and creates spacing between each*/
 label {
 	margin-left: 30%;
 	vertical-align: top;
@@ -66,6 +79,7 @@ label {
 	margin-bottom: 4%;
 }
 
+/*Defines text box spacing to better fit varius screens*/
 input[type=text] {
 	vertical-align: 5px;
 	width: 22vw;
@@ -73,38 +87,45 @@ input[type=text] {
 	padding: 0 0 10px 0;
 }
 
+/*Allows for vertical expansion of textarea, with a limit*/
 textarea {
 	resize: vertical;
 	max-height: 100px;
 	width: 25%;
 }
 
+/*More user friendly visual*/
 checkbox:hover {
 	cursor: pointer;
 }
 
+/*Formatting the reset button to appear more visually appearing, give mouse feedback*/
 input[type=reset] {
-	height: 40px;
-	width: 75px;
+	height: 55px;
+	width: 90px;
 	margin-left: 36%;
 	cursor: pointer;
 	border-radius:5px;
 }
 
+/*Formatting the submit button to appear more visually appearing, give mouse feedback*/
 input[type=submit] {
-	height: 40px;
-	width: 75px;
+	height: 55px;
+	width: 90px;
 	margin-left: 10%;
 	cursor: pointer;
 	border-radius:5px;
 }
 
+/*Creates a banner that holds all the links to other pages, and my logo*/
 .navbar ul{
 	list-style-type: none;
 	background-color: orange;
 	padding: 10px;
 	overflow: hidden;
 }
+
+/*Making the word links fit visually better with the rest of the page*/
 .navbar a{
 	font-family: timesnewroman;
 	font-size: 4vmin;
@@ -112,31 +133,39 @@ input[type=submit] {
 	text-decoration: none;
 	display:block;
 	text-align: center;
-}	
+}
+
+/*Gives visual feedback when mouse is above a link to another page*/
 .navbar a:hover{
 	background-color: #febd59;
 }
+
+/*Spacing between each link*/
 .navbar li{
 	float: left;
 	margin-left: 8%;
 }
 
+/*Displays my logo on the hot bar*/
 .navbar img {
 	border: 0px solid;
 	min-width: 50px;
 	max-width: 50px;
 }
 
+/*Defines the proportion of space occupied by paragraphs on the home page*/
 .first p{
 	width: 45%;
 	margin-bottom: 25%;
 }
 
+/*Positions the image of myself on the right*/
 .first img {
 	float: right;
 	margin-bottom:20px;
 }
 
+/*Making the birthday appear more festive with brighter colours*/
 .first button {
 	background-color: pink;
 	color: purple;
@@ -144,6 +173,7 @@ input[type=submit] {
 	clear: right;
 }
 
+/*Postions the certificate photo of me in the middle, top of the screen*/
 .second img{
 	margin-left: 15%;
 	margin-right: 15%;
@@ -151,6 +181,7 @@ input[type=submit] {
 	margin-bottom: 25px;
 }
 
+/*After the photo, the description is postioned on the left within a designated boundry*/
 .second p{
 	clear: left;
 	float: left;
@@ -158,21 +189,24 @@ input[type=submit] {
 	width: 45%
 }
 
+/*After the photo, an award banner hangs above the list, curved edges for visual appeal*/
 .second h2{
 	float:right;
 	width: 33%;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	margin-bottom: -40px;
+	margin-bottom: -5vmin;
 	border-radius: 25px 25px 0px 0px;
 }
 
+/*Placed below the award banner, list of awards each seperated by spacing (from break statements), curved edges for visual appeal*/
 .second h3{
 	float: right;
 	width: 33%;
 	border-radius: 0px 0px 35px 35px;
 }
 
+/*Identifying the purpose of the upcoming form, corners rounded for visual appeal*/
 .third h1{
 	padding-top: 25px;
 	padding-bottom: 25px;
@@ -184,6 +218,7 @@ input[type=submit] {
 	padding-right:5%;
 }
 
+/*Provides a pleasent backdrop for the form's information*/
 .third h3{
 	padding-top: 25px;
 	padding-bottom: 25px;
@@ -194,14 +229,18 @@ input[type=submit] {
 	padding-right:5%;
 }
 
+/*Places the audio tag on the right side, and enlarges it slightly for better viewing on smaller screens*/
 .fourth audio{
 	float: right;
+	zoom: 115%;
 }
 
+/*Defines the width of the video*/
 .fourth video{
 	width: 75%;
 }
 
+/*background from various pinks to add birthday visuals*/
 .fourth{
 	background: linear-gradient( #Ff007f, #Ffc0cb);
 	padding-left: 2%;
@@ -211,13 +250,11 @@ input[type=submit] {
 	border-radius: 20px;
 }
 
+/*Button background set to match the audio's background*/
 .fourth button{
 	background-color: white;
 }
 
-main {
-	margin-left: 5%;
-	margin-right: 5%;
-	margin-bottom: 5%;
-	min-width: 500px
-}	
+/*
+Nate Caputo Updated this on November 30th to match his personal website. He used a combination of oranges, pinks, and greys to acheive his visual preference
+*/
