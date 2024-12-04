@@ -20,6 +20,14 @@
 			<li><a href="Bio_Page.html">Bio</a></li>
 			<li><a href="Info_Page.html">Info</a></li>
 			<li><a href="Form_Page.html">Contact</a></li>
+			
+			<div class="clock">
+				<div id="Display">
+				<div id="Cal" onload="TimeUpdate()"> </div>
+				<div id="Time" class="clock" onload="TimeUpdate()"></div>
+				<script src="Nate_Clock.js"> </script>
+			</div>
+		</div>
 		</ul>
 	</nav>
 </body>
@@ -53,7 +61,7 @@
 
 			<!--Box requesting user's street name, accepts letters and numbers-->
 			<label for="postcode"> Postcode: </label>
-			<input type="text" id="postcode" name="postcode" placeholder="ANA NAN" pattern="[A-Za-z0-9]{3} [A-Za-z0-9]{3}" title="Three number or digits followed by another three">
+			<input type="text" id="postcode" name="postcode" placeholder="A1A 1A1" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" title="Three number or digits followed by another three">
 
 			<!--Box requesting user's last name, only accepts numbers and is mandatory-->
 			<label for="phone"> * Phone #: </label>
