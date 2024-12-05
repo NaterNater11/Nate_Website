@@ -268,10 +268,12 @@ input[type=submit] {
 	background-color: white;
 }
 
+/*Change colour to make it stand out*/
 #Count {
 	background-color: orange;
 }
 
+/*Creates an interesting back drop for the birthday countdown*/
 .fifth{
 	background: linear-gradient(white, tan);
 	padding-left: 2%;
@@ -281,6 +283,15 @@ input[type=submit] {
 	border-radius: 20px;
 }
 
+/*Makes the buttons symmetrical*/
 #BirthdayReturn {
 	float: right;
+}
+
+/*Improved display, also set to avoid wrapping on mobile*/
+#Countdown {
+	border-radius: 30px;
+	padding-top: 10vmin;
+	padding-bottom: 10vmin;
+	max-height: 70px;
 }
