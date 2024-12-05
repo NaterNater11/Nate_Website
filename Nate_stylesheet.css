@@ -267,3 +267,20 @@ input[type=submit] {
 .fourth button{
 	background-color: white;
 }
+
+#Count {
+	background-color: orange;
+}
+
+.fifth{
+	background: linear-gradient(white, tan);
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-bottom: 2%;
+	padding-top: 2%;
+	border-radius: 20px;
+}
+
+#BirthdayReturn {
+	float: right;
+}

@@ -11,18 +11,19 @@
 	<title> Countdown Page </title>
 </head>
 
-<body>
-	<nav class="navbar">
-	<ul>
-		<div class="clock">
-			<div id="Display">
-			<div id="Cal" onload="TimeUpdate()"> </div>
-			<div id="Time" class="clock" onload="TimeUpdate()"></div>
-			<script src="Nate_Clock.js"> </script>
-		</div>
-		</div>
-	</ul>
-	</nav>
-</body>
+<main class="fifth">
+	
+	<!--Clicking this button returns user to home page, allowing to view other pages-->
+	<a href="Home_Page.html">
+		<button> Back to Home </button> </a>
+	
+	<!--Returns user to birthday page-->
+	<a id="BirthdayReturn" href="Birthday_Page.html">
+		<button> Birthday </button> </a>
 
+	<div id="Countdown" onload="BirthdayUpdate()"> </div>
+	<script src="Nate_Countdown.js"> </script>
+	
+
+</main>
 </html>
